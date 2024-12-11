@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eesti Judo Edetabel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+        }
+        .main-content {
+            max-width: 1000px;
+            margin: 0 480px;
+            padding: 20px;
+            background-color: transparent;
+        }
+        .header {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #003399;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .nav {
+            background-color: #003399;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+        .nav a:hover {
+            background-color: #002266;
+        }
+        .nav a.active {
+            background-color: #002266;
+        }
+        .category {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #1a237e;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #1a237e;
+        }
+        th {
+            background-color: #003399;
+            color: white;
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover td {
+            background-color: #f5f5f5;
+        }
+        @media (max-width: 1800px) {
+            .main-content {
+                margin: 0 auto;
+                padding: 10px;
+            }
+            
+            .side-image {
+                display: none;
+            }
+        }
+        .side-image {
+            width: 400px;
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            animation: fadeInOut 12s infinite;
+            z-index: -1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .left-image-1 { left: 40px; animation-delay: 0s; }
+        .left-image-2 { left: 40px; animation-delay: 4s; }
+        .left-image-3 { left: 40px; animation-delay: 8s; }
+
+        .right-image-1 { right: 40px; animation-delay: 0s; }
+        .right-image-2 { right: 40px; animation-delay: 4s; }
+        .right-image-3 { right: 40px; animation-delay: 8s; }
+
+        @keyframes fadeInOut {
+            0%, 33%, 100% { opacity: 0; }
+            5%, 28% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="header">
+            <h1>Eesti Judo Edetabel</h1>
+        </div>
+        
+        <div class="nav">
+            <a href="index.html" class="active">Edetabel</a>
+            <a href="voistlused.html">Võistlused</a>
+            <a href="uudised.html">Uudised</a>
+            <a href="veebipood.html">Veebipood</a>
+            <a href="kontakt.html">Kontaktid</a>
+            <a href="ostukorv.html">Ostukorv</a>
+        </div>
+        
+        <div class="category">
+            <h2>
+                Mehed -60kg
+            </h2>
+            <table>
+                <tr>
+                    <th>Koht</th>
+                    <th>Nimi</th>
+                    <th>Klubi</th>
+                    <th>Punktid</th>
+                    <th>Võidud</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Andres Kask</td>
+                    <td>Tartu Judokool</td>
+                    <td>890</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tõnu Vaher</td>
+                    <td>Tallinna Judo</td>
+                    <td>845</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Karl Lepp</td>
+                    <td>Võru Judoklubi</td>
+                    <td>820</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="category">
+            <h2>Mehed -73kg</h2>
+            <table>
+                <tr>
+                    <th>Koht</th>
+                    <th>Nimi</th>
+                    <th>Klubi</th>
+                    <th>Punktid</th>
+                    <th>Võidud</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Märt Tammeväli</td>
+                    <td>Tallinna Judo</td>
+                    <td>850</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kaur Kask</td>
+                    <td>Tartu Judokool</td>
+                    <td>780</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Raivo Põder</td>
+                    <td>Pärnu Judo</td>
+                    <td>745</td>
+                    <td>7</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="category">
+            <h2>Mehed -81kg</h2>
+            <table>
+                <tr>
+                    <th>Koht</th>
+                    <th>Nimi</th>
+                    <th>Klubi</th>
+                    <th>Punktid</th>
+                    <th>Võidud</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mihkel Tamm</td>
+                    <td>Tallinna Judo</td>
+                    <td>905</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jaanus Kivi</td>
+                    <td>Narva Sport</td>
+                    <td>880</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Peeter Kuusk</td>
+                    <td>Pärnu Judo</td>
+                    <td>865</td>
+                    <td>12</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="category">
+            <h2>Naised -57kg</h2>
+            <table>
+                <tr>
+                    <th>Koht</th>
+                    <th>Nimi</th>
+                    <th>Klubi</th>
+                    <th>Punktid</th>
+                    <th>Võidud</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mari Mets</td>
+                    <td>Tartu Judokool</td>
+                    <td>880</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Eva Rand</td>
+                    <td>Tallinna Judo</td>
+                    <td>855</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Liina Pärn</td>
+                    <td>Võru Judoklubi</td>
+                    <td>830</td>
+                    <td>8</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="category">
+            <h2>Naised -63kg</h2>
+            <table>
+                <tr>
+                    <th>Koht</th>
+                    <th>Nimi</th>
+                    <th>Klubi</th>
+                    <th>Punktid</th>
+                    <th>Võidud</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Liisa Lepik</td>
+                    <td>Tallinna Judo</td>
+                    <td>920</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Marta Saar</td>
+                    <td>Võru Judoklubi</td>
+                    <td>875</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Katrin Kuusik</td>
+                    <td>Narva Sport</td>
+                    <td>830</td>
+                    <td>6</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="category">
+            <h2>Naised -70kg</h2>
+            <table>
+                <tr>
+                    <th>Koht</th>
+                    <th>Nimi</th>
+                    <th>Klubi</th>
+                    <th>Punktid</th>
+                    <th>Võidud</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Anne Kallas</td>
+                    <td>Pärnu Judo</td>
+                    <td>865</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kadri Tamm</td>
+                    <td>Tartu Judokool</td>
+                    <td>840</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Helen Kask</td>
+                    <td>Tallinna Judo</td>
+                    <td>825</td>
+                    <td>10</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <img src="judo-left-1.jpg" alt="Judo pilt 1" class="side-image left-image-1">
+    <img src="judo-left-2.jpg" alt="Judo pilt 2" class="side-image left-image-2">
+    <img src="judo-left-3.jpg" alt="Judo pilt 3" class="side-image left-image-3">
+
+    <img src="judo-right-1.jpg" alt="Judo pilt 4" class="side-image right-image-1">
+    <img src="judo-right-2.jpg" alt="Judo pilt 5" class="side-image right-image-2">
+    <img src="judo-right-3.jpg" alt="Judo pilt 6" class="side-image right-image-3">
+</body>
+</html>
